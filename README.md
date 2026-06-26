@@ -137,45 +137,45 @@ FinCalc AI:
 ## Implementation Roadmap
 
 ### Phase 1 — Formula Engine Core
-- [ ] Set up Vite + React + TypeScript + Tailwind project
-- [ ] Implement `compound_interest()` with step-by-step output
-- [ ] Implement `mortgage()` with amortization table
-- [ ] Implement `tax_tr()` with 2024 brackets (SGK + income tax + stamp)
-- [ ] Unit tests for all formula functions
-- [ ] Formula result → structured JSON schema
+- [x] Set up Vite + React + TypeScript + Tailwind project
+- [x] Implement `compound_interest()` with step-by-step output
+- [x] Implement `mortgage()` with amortization table
+- [x] Implement `tax_tr()` with 2024 brackets (SGK + income tax + stamp)
+- [x] Unit tests for all formula functions
+- [x] Formula result → structured JSON schema
 
 ### Phase 2 — Ollama Integration
-- [ ] Set up Ollama locally (pull qwen2.5:7b)
-- [ ] Build intent classification prompt (few-shot, 10 examples per formula type)
-- [ ] Parameter extraction: parse Turkish number formats (500.000 TL, %45, 3 yıl)
-- [ ] Error handling for ambiguous queries
-- [ ] Fallback: if intent unclear, ask clarifying question
+- [x] Set up Ollama locally (pull qwen2.5:7b)
+- [x] Build intent classification prompt (few-shot, 10 examples per formula type)
+- [x] Parameter extraction: parse Turkish number formats (500.000 TL, %45, 3 yıl)
+- [x] Error handling for ambiguous queries
+- [x] Fallback: if intent unclear, ask clarifying question
 
 ### Phase 3 — React Chat UI
-- [ ] Chat interface component (message history, input bar)
-- [ ] Message bubbles: user query | AI response | calculation result card
-- [ ] Loading state while Ollama processes
-- [ ] Keyboard shortcuts (Enter to send, Ctrl+L to clear)
+- [x] Chat interface component (message history, input bar)
+- [x] Message bubbles: user query | AI response | calculation result card
+- [x] Loading state while Ollama processes
+- [x] Keyboard shortcuts (Enter to send, Ctrl+L to clear)
 
 ### Phase 4 — Voice Input
-- [ ] Web Speech API integration (SpeechRecognition)
-- [ ] Microphone button with recording indicator
-- [ ] Turkish language recognition (`lang: 'tr-TR'`)
-- [ ] Transcript → chat input auto-fill
+- [x] Web Speech API integration (SpeechRecognition)
+- [x] Microphone button with recording indicator
+- [x] Turkish language recognition (`lang: 'tr-TR'`)
+- [x] Transcript → chat input auto-fill
 
 ### Phase 5 — Live Currency Rates
-- [ ] ExchangeRate-API integration (free, 1500 req/month)
-- [ ] Cache rates in LocalStorage (refresh every 1 hour)
-- [ ] `currency.ts` module: convert between any pair
-- [ ] Rate display in UI header (USD/TRY, EUR/TRY live)
+- [x] ExchangeRate-API integration (free, 1500 req/month)
+- [x] Cache rates in LocalStorage (refresh every 1 hour)
+- [x] `currency.ts` module: convert between any pair
+- [x] Rate display in UI header (USD/TRY, EUR/TRY live)
 
 ### Phase 6 — Charts + History Panel
-- [ ] Recharts integration: bar, line, area, pie charts
-- [ ] Auto-select chart type based on formula (compound → line, comparison → bar)
-- [ ] History panel (sidebar): all past calculations
-- [ ] Click history item → re-run with same parameters
-- [ ] Export calculation as PNG (html-to-image)
-- [ ] Dark/light theme toggle
+- [x] Recharts integration: bar, line, area, pie charts
+- [x] Auto-select chart type based on formula (compound → line, comparison → bar)
+- [x] History panel (sidebar): all past calculations
+- [x] Click history item → re-run with same parameters
+- [x] Export calculation as PNG (html-to-image)
+- [x] Dark/light theme toggle
 
 ---
 
